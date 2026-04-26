@@ -20,7 +20,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 5000
-            hostPort: 5000
         envFrom:
           - secretRef:
               name: llmops-secrets
